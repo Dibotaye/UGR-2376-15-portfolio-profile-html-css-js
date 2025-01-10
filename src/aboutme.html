@@ -4,66 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/meadiaquery.css">
 </head>
 <body>
     <header>
-        <nav class="desktop-nav">
+        <div class="header-container">
             <div class="my-logo">
-                <img src="./images/mylogo.png" alt="My Logo" class="logo">
+                <a href="index.html"><img src="./images/mylogo.png" alt="My Logo" class="logo"></a>
             </div>
-            <div class="list-container">
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="contactme.html">Contact Me</a></li>
-                </ul>
-                <button class="bar-btn" aria-label="Menu">
-                    <img src="./icons/bars-solid.svg" alt="Menu Icon">
-                </button>
-                <button class="light-dark-mode" aria-label="Toggle Light/Dark Mode">
-                    <img src="./icons/moon-thin.svg" alt="Light/Dark Mode Icon">
-                </button>
+            <div class="nav-container">
+                <nav>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutme.html" class="at-the-page">About Me</a></li>
+                            <li><a href="education.html">Education</a></li>
+                            <li><a href="experience.html">Experience</a></li>
+                            <li><a href="contactme.html">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="darkmode-and-ham">
+                    <div class="light-dark-mode">
+                        <img src="./icons/moon-solid.svg" alt="Toggle Light/Dark Mode" class="moon">
+                        <img src="./icons/light_mode.svg" alt="Toggle Light/Dark Mode" class="sun">
+                    </div>
+                    <div class="ham-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
-    
     <main>
         <article>
-            <h2>About Me</h2>
+            <h2 class="title">About Me</h2>
             <p>
                 As a passionate software engineer from Ethiopia, I am dedicated to honing my skills to meet the ever-evolving demands of the tech industry. Outside of work, I express my creativity through photography, draw inspiration from music, and explore new horizons through travel. These hobbies fuel my curiosity and drive for innovation, shaping my vision for a future where I can make meaningful contributions to the tech world.
             </p>
+            <h3 class="my-hobby-title">My Hobbies</h3>
             <div class="image-div">
                 <figure class="my-hobby-image">
                     <img src="./images/hobby-image1.jpg" alt="Playing Guitar" class="hobby-image">
-                    <figcaption>Guitar 🎸</figcaption>
+                    <figcaption class="section-text">Guitar 🎸</figcaption>
                 </figure>
                 <figure class="my-hobby-image">
                     <img src="./images/hobby-image2.jpg" alt="Photography" class="hobby-image">
-                    <figcaption>Photography 📷</figcaption>
+                    <figcaption class="section-text">Photography 📷</figcaption>
                 </figure>
                 <figure class="my-hobby-image">
                     <img src="./images/hobby-image3.jpg" alt="Traveling" class="hobby-image">
-                    <figcaption>Travel ✈️</figcaption>
+                    <figcaption class="section-text">Travel ✈️</figcaption>
                 </figure>
             </div>
-            <h2>My Favorite Music</h2>
-            <audio controls preload="metadata" aria-label="Audio description">
-                <source src="./audio/Azeb-Hailu.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            
-            <h2>My Future Adventure</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="./video/2169880-uhd_2560_1440_30fps.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="video-caption">
-                    <p>The world is your playground; go out and explore it.</p>
+            <div class="audio-and-video">
+                <div class="audio-container">
+                    <h3>My Favorite Music</h3>
+                    <audio controls aria-label="Audio description">
+                        <source src="./audio/Azeb-Hailu.mp3" type="audio/mpeg">
+                        <p>If audio does not start, the <audio> HTML element is not supported in your browser.</p>
+                    </audio>
+                </div>
+                <div class="video-container">
+                    <h3>My Future Adventure</h3>
+                    <video controls>
+                        <source src="./video/adventure.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-caption">
+                        <p>The world is your playground; go out and explore it.</p>
+                    </div>
                 </div>
             </div>
         </article>
@@ -83,5 +96,6 @@
             </a>
         </p>
     </footer>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>
