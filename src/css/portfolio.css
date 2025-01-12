@@ -206,7 +206,9 @@
     align-items: center;
 
   }
-  
+  .contactme-btn a {
+    color: #ffffff;
+   }
   .contactme-btn, .cv-btn {
     background-color: var(--brand-color);
     color: #ffffff;
@@ -220,9 +222,6 @@
     letter-spacing: 2px;
     font-weight: bold; 
   }
-.contactme-btn a{
-    color: #ffffff;
-}
   .contactme-btn:hover, .cv-btn:hover {
     background-color: var(--fill);
     color: var(--text-strong);
