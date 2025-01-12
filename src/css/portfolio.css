@@ -206,7 +206,7 @@
     align-items: center;
 
   }
-  .contactme-btn a {
+  .container-btn .contactme-btn a {
     color: #ffffff;
    }
   .contactme-btn, .cv-btn {
